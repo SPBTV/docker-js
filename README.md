@@ -20,3 +20,11 @@ echo "##teamcity[buildNumber '${NODE_VERSION}-alpine']"
 ```
 
 where %NODE% is a configuration parameter set on Teamcity.
+
+# How to
+
+To create a new container for a new version of Nodejs, please do the following:
+
+- Create a folder with the name of the version (major.minor) you want to support, for example: 6.10, 7.10, 8.0
+- Add dockerfile to this folder
+- Update dockerfile `ENV` values for `NODE_VERSION` and if needed `NPM_VERSION`
