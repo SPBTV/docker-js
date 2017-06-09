@@ -26,6 +26,7 @@ where %NODE% is a configuration parameter set on Teamcity.
 To create a new container for a new version of Nodejs, please do the following:
 
 - Create a folder with the name of the version (major.minor) you want to support, for example: 6.10, 7.10, 8.0, etc.
+If it is a minor update remove directory for previous version.
 - Add dockerfile to this folder
 - Update dockerfile `ENV` values for `NODE_VERSION` and if needed `NPM_VERSION`
 
