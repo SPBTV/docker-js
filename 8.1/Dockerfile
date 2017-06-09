@@ -4,7 +4,7 @@ FROM nginx:1.12.0-alpine
 
 MAINTAINER Mijail Cisneros <m@spbtv.com>
 
-ENV NODE_VERSION 8.0.0
+ENV NODE_VERSION 8.1.0
 ENV NPM_CONFIG_LOGLEVEL info
 ENV NPM_VERSION 5
 
@@ -58,4 +58,4 @@ RUN addgroup -g 1000 node \
         /root/.npm /root/.node-gyp /root/.gnupg \
         /usr/local/lib/node_modules/npm/man /usr/local/lib/node_modules/npm/doc \
         /usr/local/lib/node_modules/npm/html
-    #&& rm -rf /etc/ssl  
+    #&& rm -rf /etc/ssl
